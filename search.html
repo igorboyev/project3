@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 
 <head>
   <meta charset="UTF-8">
@@ -9,6 +9,16 @@
 </head>
 
 <body>
+  <fieldset>
+    <legend>Навигация</legend>
+    <div>
+      <a href="./index.html">Главная</a>
+      <a href="./signup.html">Регистрация</a>
+      <a href="./signin.html">Авторизация</a>
+      <a href="./search.html">Поиск</a>
+    </div>
+  </fieldset>
+
   <form action="https://tests.fomenko.top/echo/index.php" method="get">
     <fieldset>
       <legend>Поиск</legend>
@@ -25,7 +35,6 @@
               <option>Пикап</option>
             </select>
           </li>
-
           <li>
             <label for="make">Марка авто</label>
             <select name="make" id="make" required>
@@ -37,7 +46,6 @@
               <option>Toyota</option>
             </select>
           </li>
-
           <li>
             <label for="country">Страна производитель</label>
             <select name="country" id="country">
@@ -49,19 +57,16 @@
               <option>Италия</option>
             </select>
           </li>
-
           <li>
             <label for="price">Цена</label>
             <input id="price" type="number" name="price" placeholder="от" min="1">
             <input type="number" placeholder="до" min="2">
           </li>
-
           <li>
             <label for="year">Год выпуска</label>
             <input id="year" type="number" name="year" placeholder="от" min="1935" max="2022">
             <input type="number" placeholder="до" min="1936" max="2022">
           </li>
-
           <li>
             <label for="condition">Состояние</label>
             <select name="condition" id="condition" multiple size="3">
@@ -73,7 +78,6 @@
               <option>Авто из США</option>
             </select>
           </li>
-
           <li>
             <label for="fuel">Тип топлива</label>
             <select name="fuel" id="fuel">
@@ -85,7 +89,6 @@
               <option>Газ</option>
             </select>
           </li>
-
           <li>
             <label for="kpp">Тип коробки передач</label>
             <select name="kpp" id="kpp">
@@ -97,7 +100,6 @@
               <option>Вариатор</option>
             </select>
           </li>
-
           <li>
             <label for="color">Цвет</label>
             <select name="color" id="color">
@@ -109,7 +111,6 @@
               <option>Желтый</option>
             </select>
           </li>
-
           <li>
             <label for="comfort">Комфорт</label>
             <select name="comfort" id="comfort">
