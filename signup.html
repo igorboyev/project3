@@ -11,9 +11,21 @@
 <body>
 
   <form action="https://tests.fomenko.top/echo/index.php" method="get">
-    <input type="text" name="lgn">
-    <input type="email" name="email">
-    <input type="password" name="psw">
+
+    <div>
+      <label for="lgn">Логин</label>
+      <input id="lgn" type="text" name="lgn" placeholder="Введите логин">
+    </div>
+
+    <div>
+      <label for="psw">Пароль</label>
+      <input id="psw" type="password" name="psw" placeholder="Введите пароль">
+    </div>
+
+    <div>
+      <label for="email">Email</label>
+      <input id="email" type="email" name="email" placeholder="Ваш email">
+    </div>
 
     <button type="submit">Сохранить</button>
     <button type="reset">Очистить</button>
