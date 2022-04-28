@@ -1,15 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>SignIn</title>
 </head>
 
 <body>
+  <form action="https://tests.fomenko.top/echo/index.php" method="post">
+    <fieldset>
+      <legend>Авторизация</legend>
+      <div>
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email" placeholder="Ваш email" required>
+      </div>
 
+      <div>
+        <label for="psw">Пароль</label>
+        <input id="psw" type="password" name="psw" placeholder="Введите пароль" required>
+      </div>
+
+      <div>
+        <label for="rpsw">Запомнить пароль</label>
+        <input id="rpsw" type="checkbox">
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Действия</legend>
+      <button type="submit">Вход на сайт</button>
+      <button type="reset">Очистить</button>
+    </fieldset>
+  </form>
 </body>
 
 </html>
