@@ -5,11 +5,132 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Search</title>
 </head>
 
 <body>
+  <form action="https://tests.fomenko.top/echo/index.php" method="get">
+    <fieldset>
+      <legend>Поиск</legend>
+      <div>
+        <ul>
+          <li>
+            <label for="type">Тип кузова</label>
+            <select name="type" id="type">
+              <option selected value="">выбрать</option>
+              <option>Седан</option>
+              <option>Универсал</option>
+              <option>Купе</option>
+              <option>Хетчбек</option>
+              <option>Пикап</option>
+            </select>
+          </li>
 
+          <li>
+            <label for="make">Марка авто</label>
+            <select name="make" id="make" required>
+              <option selected disabled value="">выбрать</option>
+              <option>Audi</option>
+              <option>BMW</option>
+              <option>FORD</option>
+              <option>Lexus</option>
+              <option>Toyota</option>
+            </select>
+          </li>
+
+          <li>
+            <label for="country">Страна производитель</label>
+            <select name="country" id="country">
+              <option selected value="">выбрать</option>
+              <option>Германия</option>
+              <option>Америка</option>
+              <option>Япония</option>
+              <option>Китай</option>
+              <option>Италия</option>
+            </select>
+          </li>
+
+          <li>
+            <label for="price">Цена</label>
+            <input id="price" type="number" name="price" placeholder="от" min="1">
+            <input type="number" placeholder="до" min="2">
+          </li>
+
+          <li>
+            <label for="year">Год выпуска</label>
+            <input id="year" type="number" name="year" placeholder="от" min="1935" max="2022">
+            <input type="number" placeholder="до" min="1936" max="2022">
+          </li>
+
+          <li>
+            <label for="condition">Состояние</label>
+            <select name="condition" id="condition" multiple size="3">
+              <option selected value="">можно выбрать несколько пунктов</option>
+              <option>Битая</option>
+              <option>В кредите</option>
+              <option>Нерастаможенная</option>
+              <option>Конфискат</option>
+              <option>Авто из США</option>
+            </select>
+          </li>
+
+          <li>
+            <label for="fuel">Тип топлива</label>
+            <select name="fuel" id="fuel">
+              <option selected value="">выбрать</option>
+              <option>Бензин</option>
+              <option>Дизель</option>
+              <option>Гибрид</option>
+              <option>Электро</option>
+              <option>Газ</option>
+            </select>
+          </li>
+
+          <li>
+            <label for="kpp">Тип коробки передач</label>
+            <select name="kpp" id="kpp">
+              <option selected value="">выбрать</option>
+              <option>Ручная/Механика</option>
+              <option>Автомат</option>
+              <option>Типтроник</option>
+              <option>Робот</option>
+              <option>Вариатор</option>
+            </select>
+          </li>
+
+          <li>
+            <label for="color">Цвет</label>
+            <select name="color" id="color">
+              <option selected value="">выбрать</option>
+              <option>Черный</option>
+              <option>Белый</option>
+              <option>Красный</option>
+              <option>Синий</option>
+              <option>Желтый</option>
+            </select>
+          </li>
+
+          <li>
+            <label for="comfort">Комфорт</label>
+            <select name="comfort" id="comfort">
+              <option selected value="">выбрать</option>
+              <option>Люк</option>
+              <option>Кожанный салон</option>
+              <option>Датчик света</option>
+              <option>Мультируль</option>
+              <option>Подогрев сидений</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Действия</legend>
+      <button type="submit">Поиск</button>
+      <button type="reset">Очистить</button>
+    </fieldset>
+  </form>
 </body>
 
 </html>
